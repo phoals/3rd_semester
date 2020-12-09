@@ -3,7 +3,7 @@
 
 void create(int** ,int);
 void connection(int);
-void delete(int**, int);
+int** delete(int**, int);
 void sort(int**, int);
 void bubble(int* ,int, int*);
 
@@ -33,7 +33,7 @@ int main(void)
                 connection(n);
                 break;
             case 2:
-                delete(a, n);
+                a = delete(a, n);
                 break;
             case 3:
                 sort(a, n);
@@ -85,8 +85,8 @@ void create(int** a, int n){
     }
     fprintf(f, "}");
     fclose(f);
-    /**system("dot -Tpng test.dot -o test.png");
-    system("test.png");**/
+    system("dot -Tpng test.dot -o test.png");
+    system("test.png");
 }
 
 void connection(int n){
@@ -101,24 +101,31 @@ void connection(int n){
     }
 }
 
-void delete(int** a, int n){
-    printf("Type index of an edge you want to remove:\n");
-    int x,y;
+int** delete(int** a, int n){
+    printf("Type a name of an edge you want to remove:\n");
+    int x;
     scanf("%d", &x);
-    scanf("%d", &y);
+    for (int i = 0; i<n; i++)
+    {
+        if (i == x - 1) {
+            for (int j = 0; j < n; j++) a[i][j] = 0;
+        }
+    }
     FILE* f = fopen("test1.dot", "w");
     fprintf(f, "graph test {\n");
     for (int i = 0; i<n; i++)
     {
         for (int j = i; j<n; j++)
         {
-            if (a[i][j] == 1 && i != x && j != y) fprintf(f, "%d--%d;\n", i + 1, j + 1);
+            if (a[i][j] == 1) fprintf(f, "%d--%d;\n", i + 1, j + 1);
         }
     }
     fprintf(f, "}");
     fclose(f);
-    /**system("dot -Tpng test1.dot -o test1.png");
-    system("test1.png");**/
+    printf("Edge successfully removed\n\n");
+    system("dot -Tpng test1.dot -o test1.png");
+    system("test1.png");
+    return a;
 }
 
 void sort(int** a, int n){
