@@ -24,7 +24,6 @@
 
 Структурная схема основного алгоритма и остальных функций :
 
-<img src="https://github.com/phoals/3rd_semester/blob/main/b1.png">
 
 <img src="https://github.com/phoals/3rd_semester/blob/main/b2.png">
 
