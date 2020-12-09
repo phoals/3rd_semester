@@ -135,8 +135,10 @@ int** delete(int** a, int n){
 void sort(int** a, int n){
     int* s = (int*)malloc(n * sizeof(int));
     int* ind = (int*)malloc(n * sizeof(int));
-    for (int l = 0; l < n; ++l) ind[l] = l + 1;
-    for (int k = 0; k < n; ++k) s[k] = 0;
+    for (int l = 0; l < n; ++l) {
+        ind[l] = l + 1;
+        s[l] = 0;
+    }
     for (int i = 0; i<n; i++)
     {
         for (int j = 0; j<n; j++)
