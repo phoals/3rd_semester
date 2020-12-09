@@ -68,8 +68,12 @@ void bubble(int *num, int size, int* index)
             }
         }
     }
+    int count = 0;
     for (int k = 0; k < size; ++k) {
-        printf("%d. Edge '%d' connections ammount: %d\n", k + 1, index[k], num[k]);
+        if (num[k] != 0) {
+            count++;
+            printf("%d. Edge '%d' connections ammount: %d\n", count, index[k], num[k]);
+        }
     }
 }
 
