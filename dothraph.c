@@ -112,7 +112,10 @@ int** delete(int** a, int n){
     for (int i = 0; i<n; i++)
     {
         if (i == x - 1) {
-            for (int j = 0; j < n; j++) a[i][j] = 0;
+            for (int j = 0; j < n; j++) {
+                a[i][j] = 0;
+                a[j][i] = 0;
+            }
         }
     }
     FILE* f = fopen("test1.dot", "w");
