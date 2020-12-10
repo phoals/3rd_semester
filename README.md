@@ -24,17 +24,17 @@
 
 Структурная схема основного алгоритма и остальных функций :
 
-<img src="https://github.com/phoals/3rd_semester/blob/main/i1.png">
+<img src="https://github.com/phoals/3rd_semester/blob/main/f1.png">
 
-<img src="https://github.com/phoals/3rd_semester/blob/main/i21.png">
+<img src="https://github.com/phoals/3rd_semester/blob/main/f2.png">
 
-<img src="https://github.com/phoals/3rd_semester/blob/main/i2.png">
+<img src="https://github.com/phoals/3rd_semester/blob/main/f3.png">
 
-<img src="https://github.com/phoals/3rd_semester/blob/main/i3.png">
+<img src="https://github.com/phoals/3rd_semester/blob/main/f4.png">
 
-<img src="https://github.com/phoals/3rd_semester/blob/main/i41.png">
+<img src="https://github.com/phoals/3rd_semester/blob/main/f5.png">
 
-<img src="https://github.com/phoals/3rd_semester/blob/main/i4.png">
+<img src="https://github.com/phoals/3rd_semester/blob/main/f6.png">
 
 <h1>Результат работы :</h1>
 
