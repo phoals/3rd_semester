@@ -34,7 +34,7 @@
 
 <img src="https://github.com/phoals/3rd_semester/blob/main/f5.png">
 
-<img src="https://github.com/phoals/3rd_semester/blob/main/f6.png">
+<img src="https://github.com/phoals/3rd_semester/blob/main/f7.png">
 
 <h1>Результат работы :</h1>
 
